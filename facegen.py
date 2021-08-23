@@ -11,9 +11,11 @@ class faceGen():
         for i in range(len(result_list)):
             x1, y1, width, height = result_list[i]['box']
             x2, y2 = x1 + width, y1 + height
-            plt.subplot(1, len(result_list), i+1)
+            #plt.plot(1, len(result_list), i)
             plt.axis('off')
             # plot face
             plt.imshow(data[y1:y2, x1:x2])
+            plt.subplots_adjust(bottom=0, top=1, left=0, right=1)
+            plt.savefig('./faceGen/face' + str(i) + '.png')
         # show the plot
-        plt.show()
+        #plt.show()

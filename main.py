@@ -4,8 +4,10 @@ import display, facegen
 
 
 img = (cv2.imread("images/test3.jpg"))
-img = cv2.resize(img, (600, 600), interpolation = cv2.INTER_NEAREST)
-display.Display(img)
+#img = cv2.resize(img, (600, 600), interpolation = cv2.INTER_NEAREST)
+
+# display.Display(img)
+
 detector  = MTCNN()
 faces = detector.detect_faces(img)
 
