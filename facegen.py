@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from mtcnn import MTCNN
+import datetime
 
 class faceGen():
     def __init__(self, img, result_list):
@@ -16,6 +17,6 @@ class faceGen():
             # plot face
             plt.imshow(data[y1:y2, x1:x2])
             plt.subplots_adjust(bottom=0, top=1, left=0, right=1)
-            plt.savefig('./faceGen/face' + str(i) + '.png')
+            plt.savefig('./faceGen/face'+"_"+str(datetime.datetime.now().date())+"_"+str(datetime.datetime.now().strftime("%H-%M-%S"))+"_"+str(i)  +'.png')
         # show the plot
         #plt.show()

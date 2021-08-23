@@ -3,7 +3,7 @@ from mtcnn import MTCNN
 import display, facegen
 
 
-img = (cv2.imread("images/test3.jpg"))
+img = (cv2.imread("images/test1.jpg"))
 #img = cv2.resize(img, (600, 600), interpolation = cv2.INTER_NEAREST)
 
 # display.Display(img)
