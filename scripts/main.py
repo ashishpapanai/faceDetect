@@ -23,4 +23,4 @@ for i in range(0, len(faces)):
             img = cv2.circle(img, value, radius=2, color=(0,0,255))
             
 #display.Display(img)
-facegen.faceGen(img, faces)
+#facegen.faceGen(img, faces)
